@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shop
+    username: postgres
+    password: Hanter678pqo
+  flyway:
+    baseline-on-migrate: true
+server:
+  hostname: localhost
+  port: ${PORT:8080}
+mail:
+  server:
+    host: smtp.mail.ru
+    port: 465
+    username: test.balashov@mail.ru
+    password: hanter678pqo123
